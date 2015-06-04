@@ -20,12 +20,14 @@
         <div class="panel-body">
           <!-- Expect this description to be enclosed in the necessary elements -->
           <%= details.info %>
-          <% details.grades.each do |grade, title| %>
-          <div class="alert alert-<%= stats.projects[project][grade].alert %>">
-            <b><%= title %></b>
-            <span class="pull-right"><%= stats.projects[project][grade].value %></span>
+          <div class="grades">
+            <% details.grades.each do |grade, title| %>
+            <div class="alert alert-<%= stats.projects[project][grade].alert %>">
+              <b><%= title %></b>
+              <span class="pull-right"><%= stats.projects[project][grade].value %></span>
+            </div>
+            <% end %>
           </div>
-          <% end %>
         </div>
       </div>
       <% end %>

@@ -44,10 +44,22 @@ hr {
   left: 10px;
   margin-top: 10px;
 }
-
 .key .alert {
   flex-grow: 1;
   margin-right: 20px;
   flex-basis: 20%;
   min-width: 180px;
+}
+
+.grades {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10px;
+  margin-top: 20px;
+}
+.grades .alert {
+  flex-grow: 1;
+  min-width: 180px;
+  margin: 0 20px 20px 0;
 }
