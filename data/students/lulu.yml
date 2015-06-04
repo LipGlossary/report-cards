@@ -1,0 +1,45 @@
+fullName: 'Lulu Haynes'
+github: 'lipglossary'
+csUserName: '509932'
+attendance:
+  percentage:
+    alert: 'success'
+    sub: 'Great!'
+    value: '100%, plus extra credit hours'
+  extra:
+    alert: 'info'
+    value: '42'
+codeschool:
+  fefound:
+    levels:
+    complete: false
+  feform:
+    levels:
+    complete: false
+  ccc:
+    levels:
+    complete: false
+  jim:
+    levels:
+    complete: false
+  fod:
+    levels:
+    complete: false
+  jsrt1:
+    levels:
+    complete: false
+  tjq:
+    levels:
+    complete: false
+projects:
+  semantic:
+    check:
+      alert: 'success'
+      value: 'Complete and satisfactory'
+  css:
+    demo:
+      alert: 'success'
+      value: 'Present'
+    content:
+      alert: 'warning'
+      value: 'Incomplete, underworked submission'

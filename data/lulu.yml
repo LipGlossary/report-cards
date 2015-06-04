@@ -1,8 +1,0 @@
-fullName: 'Lulu Haynes'
-attendance:
-  percentage:
-    alert: 'success'
-    value: '100%'
-  extra:
-    alert: 'info'
-    value: '68'

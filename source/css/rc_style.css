@@ -5,17 +5,17 @@ header img {
 table img {
   height: 5em;
 }
-
-table td:last-of-type img {
-  height: 6em;
-}
-
 td {
   vertical-align: middle !important;
 }
-
+th:last-of-type, td:last-of-type {
+  text-align: center;
+}
 td img {
   margin: 0.5em;
+}
+td:last-of-type img {
+  height: 7em;
 }
 
 a:link {

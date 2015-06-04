@@ -1,4 +1,4 @@
-<% stats = data[locals[:name]] %>
+<% stats = data.students[locals[:name]] %>
 
 <section class="container-fluid">
   <div class="row-fluid">
@@ -15,84 +15,31 @@
             </tr>
           </thead>
           <tbody>
+            <% data.badges.each do |course, info| %>
             <tr>
-              <td>Front-End Foundations</td>
+              <td><%= info.name %></td>
               <td>
-                <img src="img/cs/front-end-foundations/level-1-complete-a14a15c153bbe32611fca5be835923bf.png" />
-                <img src="img/cs/front-end-foundations/level-2-complete-8189525329228c8f6513e22202b8729b.png" />
-                <img src="img/cs/front-end-foundations/level-3-complete-3ce06a25d49e2457712ba2b72463a66c.png" />
-                <img src="img/cs/front-end-foundations/level-4-complete-161720168d30cd46936555dd6f4e20ef.png" />
-                <img src="img/cs/front-end-foundations/level-5-complete-854f2231143a3b3b49bc44c00cbbe7e7.png" />
+                <% if stats.codeschool[course].levels %>
+                <% stats.codeschool[course].levels.each do |level| %>
+                <img src="<%= data.badges[course][level] %>" />
+                <% end %>
+                <% else %>
+                No levels completed
+                <% end %>
               </td>
-              <td><img src="img/cs/front-end-foundations/course-complete-81fb30908f005de5c75e5376d041f05f.png" /></td>
-            </tr>
-            <tr>
-              <td>Front-End Formations</td>
               <td>
-                <img src="img/cs/front-end-formations/level-1-on-front-end-formations-c27483b64148275c96bb8d0c999893d9.png" />
-                <img src="img/cs/front-end-formations/level-2-on-front-end-formations-f8f7a7c43e94c88a4e2631386777fc73.png" />
-                <img src="img/cs/front-end-formations/level-3-on-front-end-formations-5db12952d80199300bd5106e47f84b44.png" />
-                <img src="img/cs/front-end-formations/level-4-on-front-end-formations-f76933da76d45889cd6441de1987413f.png" />
-                <img src="img/cs/front-end-formations/level-5-on-front-end-formations-cb3cef3fb878f727936622823c99698d.png" />
+                <% if stats.codeschool[course].complete %>
+                <img src="<%= data.badges[course].complete %>" />
+                <% else %>
+                No
+                <% end %>
               </td>
-              <td><img src="img/cs/front-end-formations/completed-front-end-formations-165329e44a56cd6d401c0c60369d368e.png" /></td>
             </tr>
-            <tr>
-              <td>CSS Cross-Country</td>
-              <td>
-                <img src="img/cs/css-cross-country/level-1-on-css-cross-country-96fb99da28e17edb7da62911777bf1d3.png" />
-                <img src="img/cs/css-cross-country/level-2-on-css-cross-country-43b9d83055fa06b607cb0cf1215a0e70.png" />
-                <img src="img/cs/css-cross-country/level-3-on-css-cross-country-2b35c588ea146a297f629d5cf733ff90.png" />
-                <img src="img/cs/css-cross-country/level-4-on-css-cross-country-812c700bf5d3aa4abce2eeb1187081bb.png" />
-                <img src="img/cs/css-cross-country/level-5-on-css-cross-country-b7ef43220bbf0447349b8fb10fb71f34.png" />
-                <img src="img/cs/css-cross-country/level-6-on-css-cross-country-f6a27acffa789bf7725fc9f046fc4254.png" />
-                <img src="img/cs/css-cross-country/level-7-on-css-cross-country-5a39ca2a094961f9c82b71f7ddbccbfb.png" />
-              </td>
-              <td><img src="img/cs/css-cross-country/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png" /></td>
-            </tr>
-            <tr>
-              <td>Journey Into Mobile</td>
-              <td>
-                <img src="img/cs/journey-into-mobile/level-1-on-journey-into-mobile-38943a0dda8082a17e2bcc254325e729.png" />
-                <img src="img/cs/journey-into-mobile/level-2-on-journey-into-mobile-520441dac8d2b9fe4deae674e7f1ecb7.png" />
-                <img src="img/cs/journey-into-mobile/level-3-on-journey-into-mobile-d179708d37f471ca87f3e3db0a8f1fe8.png" />
-                <img src="img/cs/journey-into-mobile/level-4-on-journey-into-mobile-b1604a6c2640a14ecef6d93885c57fbc.png" />
-              </td>
-              <td><img src="img/cs/journey-into-mobile/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png" /></td>
-            </tr>
-            <tr>
-              <td>Fundamentals of Design</td>
-              <td>
-                <img src="img/cs/fundamentals-of-design/level-1-on-fundamentals-of-design-6aee5bf14eccf277d180785ad70f0d18.png" />
-                <img src="img/cs/fundamentals-of-design/level-2-on-fundamentals-of-design-f317d98005bbbcb64332ffa40e7da3d0.png" />
-                <img src="img/cs/fundamentals-of-design/level-3-on-fundamentals-of-design-ace096931085868e735c7bacd461dae9.png" />
-              </td>
-              <td><img src="img/cs/fundamentals-of-design/completed-fundamentals-of-design-b9f4f4d4ff73f8a9fdff2043a223404e.png" /></td>
-            </tr>
-            <tr>
-              <td>JavaScript Road Trip Part 1</td>
-              <td>
-                <img src="img/cs/javascript-road-trip-part-1/level-1-on-javascript-road-trip-part-1-ff645bd94243922a90b775da5ee2647c.png" />
-                <img src="img/cs/javascript-road-trip-part-1/level-2-on-javascript-road-trip-part-1-e568b2c31b1fd0da0dc94cc4d5452150.png" />
-                <img src="img/cs/javascript-road-trip-part-1/level-3-on-javascript-road-trip-part-1-ae7652ab8f363e27fea8afe06cee30e3.png" />
-              </td>
-              <td><img src="img/cs/javascript-road-trip-part-1/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png" /></td>
-            </tr>
-            <tr>
-              <td>Try JQuery</td>
-              <td>
-                <img src="img/cs/try-jquery/level-1-on-try-jquery-195852b5089f07d0a4ec66634dbc3285.png" />
-                <img src="img/cs/try-jquery/level-2-on-try-jquery-804e03c59fd757dbe7c3964d238e37a2.png" />
-                <img src="img/cs/try-jquery/level-3-on-try-jquery-0fd4605995b2b2aed756dcd55ba3c3c8.png" />
-                <img src="img/cs/try-jquery/level-4-on-try-jquery-2e887987593d69f5d7a9c3888abbf797.png" />
-                <img src="img/cs/try-jquery/level-5-on-try-jquery-d932a0a14a14f5b274c820948ad048c6.png" />
-              </td>
-              <td><img src="img/cs/try-jquery/completed-try-jquery-872711eae2fc5024011c64863ae69323.png" /></td>
-            </tr>
+            <% end %>
           </tbody>
         </table>
       </div>
-      <div class="alert alert-info" role="alert">All extra curricular course completion can be viewed at <a href="https://www.codeschool.com/users/codeschoolusername">Code School</a>.</div>
+      <div class="alert alert-info" role="alert">All extra curricular course completion can be viewed at <a href="https://www.codeschool.com/users/<%= stats.csUserName %>">Code School</a>.</div>
     </div>
   </div>
 </section>
