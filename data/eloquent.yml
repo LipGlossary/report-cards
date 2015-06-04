@@ -1,0 +1,17 @@
+chap1:
+  name: 'Chapter 1'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Workbook exercises'
+chap2:
+  name: 'Chapter 2'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    due: 'Completed by due date'
+    workbook: 'Workbook exercises'
+    extra: 'End of chapter exercises'
+chap3:
+  name: 'Chapter 3'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Workbook exercises'

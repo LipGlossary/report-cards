@@ -29,6 +29,12 @@ scrum:
   info: '<p>With Scrum and paper prototyping</p>'
   grades:
     check: 'Participation'
+tcs:
+  name: 'Teach the Class Something'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Participation'
+    article: 'Write-up for the class wiki'
 interview:
   name: 'Mock Interviews'
   info: '<p>Lorem ipsum.</p>'
@@ -36,3 +42,8 @@ interview:
     one: 'One-on-one interview #1'
     two: 'One-on-one interview #2'
     panel: 'Panel interview'
+job:
+  name: 'YWeb Job Connection'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Participation'

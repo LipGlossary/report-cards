@@ -60,6 +60,13 @@ projects:
     check:
       alert: 'info'
       value: 'Above and beyond; excellent leadership'
+  tcs:
+    check:
+      alert: 'success'
+      value: 'Participated'
+    article:
+      alert: 'danger'
+      value: 'Not submitted'
   interview:
     one:
       alert: 'success'
@@ -70,3 +77,26 @@ projects:
     panel:
       alert: 'success'
       value: 'Participated'
+  job:
+    check:
+      alert: 'success'
+      value: 'Enthousiastic participation'
+eloquent:
+  chap1:
+    check:
+      alert: 'success'
+      value: 'All tests pass'
+  chap2:
+    due:
+      alert: 'danger'
+      value: 'Absent'
+    workbook:
+      alert: 'success'
+      value: 'All tests pass'
+    extra:
+      alert: 'warning'
+      value: 'Incomplete'
+  chap3:
+    check:
+      alert: 'warning'
+      value: 'In progress'
