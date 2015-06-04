@@ -1,0 +1,38 @@
+semantic:
+  name: 'Semantic HTML'
+  info: '<p>An exercise in applying semantic HTML elements such as <code>section</code>, <code>article</code>, <code>footer</code>, etc., as well as heirarchical elements (headings, lists) to a page of content.</p>'
+  grades:
+    check: 'Grade'
+selectors:
+  name: 'CSS Selectors'
+  info: '<p>A challenging exercise for students to practice interpreting the DOM tree and use nth-child selectors to paint a pattern on a grid. A 16x16 grid of squares was provided, each quadrant structured differently (with tables, with lists, both row-dominant and column dominant, and nested <code>div</code>s).</p>'
+  grades:
+    demo: 'Demo day'
+    content: 'Grade'
+logic:
+  name: 'Logic Puzzles'
+  info: |
+          <p>Lorem ipsum</p>
+          <ul>
+            <li>Cut the Cake</li>
+            <li>Unloop the Loop</li>
+            <li>The Knight and the Knave</li>
+            <li>Exclusive OR</li>
+          </ul>
+  grades:
+    cake: 'Cut the Cake'
+    loop: 'Unloop the Loop'
+    kk: 'The Knight and the Knave'
+    xor: 'Exclusive OR'
+scrum:
+  name: 'Project Management Workshop'
+  info: '<p>With Scrum and paper prototyping</p>'
+  grades:
+    check: 'Participation'
+interview:
+  name: 'Mock Interviews'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    one: 'One-on-one interview #1'
+    two: 'One-on-one interview #2'
+    panel: 'Panel interview'

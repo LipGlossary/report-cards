@@ -36,10 +36,37 @@ projects:
     check:
       alert: 'success'
       value: 'Complete and satisfactory'
-  css:
+  selectors:
     demo:
       alert: 'success'
       value: 'Present'
     content:
       alert: 'warning'
       value: 'Incomplete, underworked submission'
+  logic:
+    cake:
+      alert: 'info'
+      value: 'Excellent, multiple correct solutions'
+    loop:
+      alert: 'success'
+      value: 'Correct, on time'
+    kk:
+      alert: 'success'
+      value: 'Successful attempt made'
+    xor:
+      alert: 'danger'
+      value: 'Not submitted'
+  scrum:
+    check:
+      alert: 'info'
+      value: 'Above and beyond; excellent leadership'
+  interview:
+    one:
+      alert: 'success'
+      value: 'Participated'
+    two:
+      alert: 'success'
+      value: 'Participated'
+    panel:
+      alert: 'success'
+      value: 'Participated'
