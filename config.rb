@@ -27,6 +27,14 @@
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
+# Assumes the file source/template.html.erb exists
+
+data.to_h.each do |name|
+  name = name[0]
+  proxy "/#{name}.html", "/template.html", :locals => { :name => name }, :ignore => true
+end
+
+ignore "/alerts.html"
 
 ###
 # Helpers
