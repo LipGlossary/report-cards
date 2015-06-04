@@ -1,0 +1,49 @@
+header img {
+  height: 2em;
+}
+
+table img {
+  height: 5em;
+}
+
+table td:last-of-type img {
+  height: 6em;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+td img {
+  margin: 0.5em;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin: 4em 0;
+}
+
+.alert, .well {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.key {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  left: 10px;
+  margin-top: 10px;
+}
+
+.key .alert {
+  flex-grow: 1;
+  margin-right: 20px;
+  flex-basis: 20%;
+  min-width: 180px;
+}
