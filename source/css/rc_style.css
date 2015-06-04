@@ -58,7 +58,7 @@ hr {
   left: 10px;
   margin-top: 20px;
 }
-.grades .alert {
+.grades .alert, .grades .well {
   flex-grow: 1;
   min-width: 180px;
   margin: 0 20px 20px 0;

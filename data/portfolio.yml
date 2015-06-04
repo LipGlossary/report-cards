@@ -1,0 +1,34 @@
+mood:
+  name: 'Mood Board'
+  info: '<p>Students were asked to create mood boards representative of themselves and their personal style in order to direct the design of the portfolio site. Most chose to organize the work via Pinterest, while others gathered multi-media reference material in a local directory.</p>'
+  grades:
+    check: 'Deliverables'
+wire:
+  name: 'Paper layouts and wireframes'
+  info: '<p>The site content was planned and then laid out on paper. Students were encouraged to mark up these layouts with semantic elements to aid in visualizing and planning the DOM structure.</p>'
+  grades:
+skeleton:
+  name: 'HTML skeletons'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Critique day'
+    demo: 'Demo day'
+design:
+  name: 'Design implementation'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    demo: 'Demo day'
+    css: 'CSS complexity'
+    bonus: 'Bonus: use of design principles'
+blog:
+  name: 'Career Blog'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    check: 'Effort'
+deploy:
+  name: 'Deployment'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    github: 'GitHub Pages root'
+    octo: 'Octopress'
+    bonus: 'Bonus: Octopress style overrides'

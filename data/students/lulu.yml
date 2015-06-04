@@ -100,3 +100,39 @@ eloquent:
     check:
       alert: 'warning'
       value: 'In progress'
+portfolio:
+  mood:
+    check:
+      alert: 'success'
+      value: 'On time, complete, and satisfactory'
+  skeleton:
+    check:
+      alert: 'success'
+      value: 'Present, participated'
+    demo:
+      alert: 'success'
+      value: 'Present, participated'
+  design:
+    demo:
+      alert: 'warning'
+      value: 'lorem'
+    css:
+      alert: 'warning'
+      value: 'lorem'
+    bonus:
+      alert: 'warning'
+      value: 'lorem'
+  blog:
+    check:
+      alert: 'warning'
+      value: 'lorem'
+  deploy:
+    github:
+      alert: 'warning'
+      value: 'lorem'
+    octo:
+      alert: 'warning'
+      value: 'lorem'
+    bonus:
+      alert: 'info'
+      value: 'lorem'
