@@ -63,3 +63,6 @@ hr {
   min-width: 180px;
   margin: 0 20px 20px 0;
 }
+.well {
+  padding: 15px;
+}
