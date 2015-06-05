@@ -21,3 +21,13 @@ codeschool:
       - 'level7'
       - 'level8'
     complete: true
+projects:
+  semantic:
+    check:
+      alert: 'success'
+      value:
+  selectors:
+    demo:
+      alert: 'success'
+      value: 'Present, participated'
+    content:

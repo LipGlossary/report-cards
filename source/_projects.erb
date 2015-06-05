@@ -1,4 +1,5 @@
 <% stats = data.students[locals[:name]] %>
+<% scores = { 'danger' => "Missed", 'warning' => "Incomplete/Late", 'success' => "Satisfactory", 'info' => "Excellent" } %>
 
 <section class="container-fluid">
   <div class="row-fluid">
@@ -21,12 +22,19 @@
           <!-- Expect this description to be enclosed in the necessary elements -->
           <%= details.info %>
           <div class="grades">
-            <% if stats && stats.projects %>
+            <% if stats && stats.projects && stats.projects[project] %>
             <% details.grades.each do |grade, title| %>
+            <% if stats.projects[project][grade] && stats.projects[project][grade].alert %>
             <div class="alert alert-<%= stats.projects[project][grade].alert %>">
               <b><%= title %></b>
-              <span class="pull-right"><%= stats.projects[project][grade].value %></span>
+              <span class="pull-right"><%= stats.projects[project][grade].value || scores[stats.projects[project][grade].alert] %></span>
             </div>
+            <% else %>
+            <div class="well">
+              <b><%= title %></b>
+              <span class="pull-right">Not yet graded.</span>
+            </div>
+            <% end %>
             <% end %>
             <% else %>
             <div class="well">Not yet graded.</div>
