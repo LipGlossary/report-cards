@@ -31,7 +31,28 @@ projects:
       alert: 'success'
       value: 'Present, participated'
     content:
+  logic:
+    cake:
+      alert: 'warning'
+      value: 'Complete, late'
+    loop:
+      alert: 'warning'
+      value: 'Complete, late'
+    kk:
+      alert: 'warning'
+      value: 'Complete, late'
+    xor:
+      alert: 'warning'
+      value: 'Complete, late'
+eloquent:
+  chap1:
+    check:
 portfolio:
   mood:
     check:
       alert: 'success'
+  skeleton:
+    check:
+      alert: 'success'
+    demo:
+      alert: 'info'

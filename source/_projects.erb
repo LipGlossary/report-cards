@@ -22,6 +22,7 @@
           <!-- Expect this description to be enclosed in the necessary elements -->
           <%= details.info %>
           <div class="grades">
+            <% if details.grades %>
             <% if stats && stats.projects && stats.projects[project] %>
             <% details.grades.each do |grade, title| %>
             <% if stats.projects[project][grade] && stats.projects[project][grade].alert %>
@@ -38,6 +39,9 @@
             <% end %>
             <% else %>
             <div class="well">Not yet graded.</div>
+            <% end %>
+            <% else %>
+            <div class="well">No grade given.</div>
             <% end %>
           </div>
         </div>
