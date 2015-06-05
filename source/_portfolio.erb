@@ -5,6 +5,36 @@
     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offet-2">
       <h2>Section 5: Portfolio Project</h2>
       <p>The vast majority of the required project work was the many components of building a comprehensive online portfolio for self-promotion.</p>
+      <% if stats %>
+      <div class="alert alert-info">
+        <% if stats.fullName %>
+        <%= stats.fullName %>'s
+        <% else %>
+        The student's
+        <% end %>
+      porfolio can be viewed on 
+        <% if stats.github %>
+        <a href="http://<%= stats.github %>.github.io">GitHub Pages</a>.
+        <% else %>
+        GitHub Pages, but no GitHub user name was given.
+        <% end %>
+      </div>
+      <div class="alert alert-info">
+        <% if stats.fullName %>
+        <%= stats.fullName %>'s
+        <% else %>
+        The student's
+        <% end %>
+      career blog can be viewed on 
+        <% if stats.github %>
+        <a href="http://<%= stats.github %>.github.io/blog">GitHub Pages</a>.
+        <% else %>
+        GitHub Pages, but no GitHub user name was given.
+        <% end %>
+      </div>
+      <% else %>
+      <div class="well">The student's portfolio and career blog will be posted to GitHub Pages.</div>
+      <% end %>
       <hr />
       <% data.portfolio.each do |project, details| %>
       <div class="panel panel-default">
@@ -16,7 +46,7 @@
           <%= details.info %>
           <div class="grades">
             <% if details.grades %>
-            <% if stats %>
+            <% if stats && stats.portfolio %>
             <% details.grades.each do |grade, title| %>
             <div class="alert alert-<%= stats.portfolio[project][grade].alert %>">
               <b><%= title %></b>

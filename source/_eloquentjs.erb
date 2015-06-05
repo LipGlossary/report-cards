@@ -15,7 +15,7 @@
           <!-- Expect this description to be enclosed in the necessary elements -->
           <%= details.info %>
           <div class="grades">
-            <% if stats %>
+            <% if stats && stats.eloquent %>
             <% details.grades.each do |grade, title| %>
             <div class="alert alert-<%= stats.eloquent[project][grade].alert %>">
               <b><%= title %></b>

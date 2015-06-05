@@ -19,7 +19,7 @@
             <tr>
               <td><%= info.name %></td>
               <td>
-                <% if stats %>
+                <% if stats && stats.codeschool %>
                 <% if stats.codeschool[course].levels %>
                 <% stats.codeschool[course].levels.each do |level| %>
                 <img src="<%= data.badges[course][level] %>" />
@@ -32,7 +32,7 @@
                 <% end %>
               </td>
               <td>
-                <% if stats %>
+                <% if stats && stats.codeschool %>
                 <% if stats.codeschool[course].complete %>
                 <img src="<%= data.badges[course].complete %>" />
                 <% else %>
@@ -47,7 +47,7 @@
           </tbody>
         </table>
       </div>
-      <% if stats %>
+      <% if stats && stats.csUserName %>
       <div class="alert alert-info" role="alert">All extra curricular course completion can be viewed at <a href="https://www.codeschool.com/users/<%= stats.csUserName %>">Code School</a>.</div>
       <% else %>
       <div class="well">No Code School user name given.</div>
