@@ -12,7 +12,10 @@
         <span class="pull-right"><%= stats.attendance.percentage.value %></span>
       </div>
       <% else %>
-      <div class="well">Not yet graded.</div>
+      <div class="well">
+        <b>Attendance</b>
+        <span class="pull-right">Not yet graded.</span>
+      </div>
       <% end %>
       <% if stats.attendance.extra %>
       <div class="alert alert-<%= stats.attendance.extra.alert %>" role="alert">
@@ -20,7 +23,10 @@
         <span class="pull-right"><%= stats.attendance.extra.value %></span>
       </div>
       <% else %>
-      <div class="well">Not yet graded.</div>
+      <div class="well">
+        <b>Total extra curricular hours logged</b>
+        <span class="pull-right">Not yet graded.</span>
+      </div>
       <% end %>
       <% else %>
       <div class="well">Not yet graded.</div>
