@@ -15,11 +15,15 @@
           <!-- Expect this description to be enclosed in the necessary elements -->
           <%= details.info %>
           <div class="grades">
+            <% if stats %>
             <% details.grades.each do |grade, title| %>
             <div class="alert alert-<%= stats.eloquent[project][grade].alert %>">
               <b><%= title %></b>
               <span class="pull-right"><%= stats.eloquent[project][grade].value %></span>
             </div>
+            <% end %>
+            <% else %>
+            <div class="well">Not yet graded.</div>
             <% end %>
           </div>
         </div>

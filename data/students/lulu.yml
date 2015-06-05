@@ -12,7 +12,12 @@ attendance:
 codeschool:
   fefound:
     levels:
-    complete: false
+      - level1
+      - level2
+      - level3
+      - level4
+      - level5
+    complete: true
   feform:
     levels:
     complete: false

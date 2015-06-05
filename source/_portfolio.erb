@@ -16,11 +16,15 @@
           <%= details.info %>
           <div class="grades">
             <% if details.grades %>
+            <% if stats %>
             <% details.grades.each do |grade, title| %>
             <div class="alert alert-<%= stats.portfolio[project][grade].alert %>">
               <b><%= title %></b>
               <span class="pull-right"><%= stats.portfolio[project][grade].value %></span>
             </div>
+            <% end %>
+            <% else %>
+            <div class="well">Not yet graded.</div>
             <% end %>
             <% else %>
             <div class="well">No grade given.</div>

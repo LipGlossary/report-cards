@@ -5,6 +5,7 @@
     <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offet-2">
       <h2>Section 1: Attendance</h2>
       <p>We hold that interaction with peers and industry professionals and work time with these resources readily available, especially including pair programming, is the single most effacatious component of learning material of this kind as an adult and within the limited time frame of the program. As such, the YWeb Career Academy program consists of 400 hours* of in-classroom instruction and work time, and an attendance rate of 90% was required to graduate the program in good standing. Students unable to meet the attendance requirement were permitted to make up the time on their own through work on independent projects outside of the required material. We found a clear correlation between time spent on coursework and a student's grasp of the material, passion for building projects, confidence, and independence, whether the time was spent in the classroom or taking on extra curricular work.</p>
+      <% if stats %>
       <div class="alert alert-<%= stats.attendance.percentage.alert %>" role="alert">
         <b>Attendance</b> &ndash; <%= stats.attendance.percentage.sub %>
         <span class="pull-right"><%= stats.attendance.percentage.value %></span>
@@ -13,6 +14,9 @@
         <b>Total extra curricular hours logged</b>
         <span class="pull-right"><%= stats.attendance.extra.value %></span>
       </div>
+      <% else %>
+      <div class="well">Not yet graded.</div>
+      <% end %>
       <p><small>* Due to inclimate and hazardous weather conditions, we were able to log 393.5 manadory in-class hours.</small></p>
     </div>
   </div>
