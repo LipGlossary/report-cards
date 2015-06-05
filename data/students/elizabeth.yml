@@ -31,3 +31,7 @@ projects:
       alert: 'success'
       value: 'Present, participated'
     content:
+portfolio:
+  mood:
+    check:
+      alert: 'success'
