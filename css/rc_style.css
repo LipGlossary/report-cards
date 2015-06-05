@@ -5,17 +5,17 @@ header img {
 table img {
   height: 5em;
 }
-
-table td:last-of-type img {
-  height: 6em;
-}
-
 td {
   vertical-align: middle !important;
 }
-
+th:last-of-type, td:last-of-type {
+  text-align: center;
+}
 td img {
   margin: 0.5em;
+}
+td:last-of-type img {
+  height: 7em;
 }
 
 a:link {
@@ -25,6 +25,10 @@ a:link {
 
 section {
   margin: 4em 0;
+}
+
+hr {
+  margin: 3em 0;
 }
 
 .alert, .well {
@@ -40,10 +44,22 @@ section {
   left: 10px;
   margin-top: 10px;
 }
-
 .key .alert {
   flex-grow: 1;
   margin-right: 20px;
   flex-basis: 20%;
   min-width: 180px;
+}
+
+.grades {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10px;
+  margin-top: 20px;
+}
+.grades .alert, .grades .well {
+  flex-grow: 1;
+  min-width: 180px;
+  margin: 0 20px 20px 0;
 }
