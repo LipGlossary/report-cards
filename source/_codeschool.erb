@@ -20,7 +20,7 @@
               <td><%= info.name %></td>
               <td>
                 <% if stats && stats.codeschool %>
-                <% if stats.codeschool[course].levels %>
+                <% if stats.codeschool[course] && stats.codeschool[course].levels %>
                 <% stats.codeschool[course].levels.each do |level| %>
                 <img src="<%= data.badges[course][level] %>" />
                 <% end %>
@@ -32,11 +32,13 @@
                 <% end %>
               </td>
               <td>
-                <% if stats && stats.codeschool %>
-                <% if stats.codeschool[course].complete %>
+                <% if stats && stats.codeschool && stats.codeschool[course] %>
+                <% if stats.codeschool[course].complete == true %>
                 <img src="<%= data.badges[course].complete %>" />
+                <% elsif stats.codeschool[course].complete == false %>
+                No.
                 <% else %>
-                No
+                Not yet graded.
                 <% end %>
                 <% else %>
                 Not yet graded.

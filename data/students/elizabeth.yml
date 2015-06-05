@@ -1,3 +1,23 @@
 fullName: 'Elizabeth Bell'
 github: 'boutbitnz'
 csUserName: 'boutbitnz'
+attendance:
+  percentage:
+    alert: 'success'
+    sub: 'Great!'
+    value: '97%, including extra curricular hours'
+  extra:
+    alert: 'info'
+    value: '104.5'
+codeschool:
+  ccc:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+      - 'level6'
+      - 'level7'
+      - 'level8'
+    complete: true
