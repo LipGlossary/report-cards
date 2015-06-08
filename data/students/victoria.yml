@@ -1,0 +1,117 @@
+fullName: 'Victoria Conley'
+github: 'vickyLu'
+csUserName: 'Quadpod'
+attendance:
+  percentage:
+    alert: 'danger'
+    sub: 'Noncompliant'
+    value: '85%, including extra curricular hours'
+  extra:
+    alert: 'info'
+    value: '59'
+codeschool:
+  fefound:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: false
+  feform:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: false
+  ccc:
+    levels:
+    complete: false
+  jim:
+    levels:
+    complete: false
+  fod:
+    levels:
+    complete: false
+  jsrt1:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
+  tjq:
+    levels:
+      - 'level1'
+    complete: false
+projects:
+  semantic:
+    check:
+      alert: 'success'
+  selectors:
+    demo:
+      alert: 'danger'
+    content:
+  logic:
+    cake:
+      alert: 'warning'
+    loop:
+      alert: 'warning'
+    kk:
+      alert: 'warning'
+    xor:
+      alert: 'warning'
+  scrum:
+    check:
+      alert: 'danger'
+  tcs:
+    check:
+      alert: 'success'
+    article:
+  interview:
+    one:
+      alert: 'success'
+    two:
+      alert: 'success'
+    panel:
+      alert: 'success'
+  job:
+    check:
+      alert: 'success'
+  group:
+    demo:
+      alert: 'info'
+    check:
+    effect:
+    team:
+    lead:
+eloquent:
+  chap1:
+    check:
+      alert: 'warning'
+  chap2:
+    due:
+      alert: 'danger'
+    workbook:
+      alert: 'warning'
+    extra:
+      alert: 'warning'
+  chap3:
+    check:
+portfolio:
+  mood:
+    check:
+      alert: 'warning'
+  skeleton:
+    check:
+      alert: 'warning'
+    demo:
+      alert: 'danger'
+  design:
+    demo:
+    css:
+    bonus:
+  blog:
+    check:
+  deploy:
+    github:
+    octo:
+    bonus:
+extra:

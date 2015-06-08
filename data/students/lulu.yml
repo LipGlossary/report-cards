@@ -186,4 +186,8 @@ portfolio:
     bonus:
       alert: 'info'
       value: 'lorem'
-extra: false
+extra:
+  one:
+    name: 'One'
+  two:
+    name: 'Two'

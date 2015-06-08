@@ -10,6 +10,22 @@ attendance:
     alert: 'info'
     value: '104.5'
 codeschool:
+  fefound:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
+  feform:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
   ccc:
     levels:
       - 'level1'
@@ -20,6 +36,31 @@ codeschool:
       - 'level6'
       - 'level7'
       - 'level8'
+    complete: true
+  jim:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
+  fod:
+    levels:
+    complete: false
+  jsrt1:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
+  tjq:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
     complete: true
 projects:
   semantic:
@@ -44,8 +85,48 @@ projects:
     xor:
       alert: 'warning'
       value: 'Complete, late'
+  scrum:
+    check:
+      alert: 'success'
+      value: 'Present, participated'
+  tcs:
+    check:
+      alert: 'success'
+    article:
+  interview:
+    one:
+      alert: 'success'
+    two:
+      alert: 'success'
+    panel:
+      alert: 'success'
+  job:
+    check:
+      alert: 'info'
+  group:
+    demo:
+      alert: 'success'
+      value: 'Present, participated'
+    check:
+    effect:
+    team:
+    lead:
 eloquent:
   chap1:
+    check:
+      alert: 'warning'
+      value: 'Complete, late'
+  chap2:
+    due:
+      alert: 'danger'
+      value: 'Absent'
+    workbook:
+      alert: 'warning'
+      value: 'Late, all tests pass'
+    extra:
+      alert: 'warning'
+      value: 'Late, all tests pass'
+  chap3:
     check:
 portfolio:
   mood:
@@ -56,3 +137,8 @@ portfolio:
       alert: 'success'
     demo:
       alert: 'info'
+extra:
+  garden:
+    name: "Beginner Gardener's Info App"
+  network:
+    name: 'About Networking, an Article'

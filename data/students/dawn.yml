@@ -1,0 +1,128 @@
+fullName: 'Dawn Deransburg'
+github: 'casa4801'
+csUserName: 'DD512'
+attendance:
+  percentage:
+    alert: 'info'
+    sub: 'Perfect!'
+    value: 'Over 100%, plus extra curricular hours'
+  extra:
+    alert: 'info'
+    value: '12.5'
+codeschool:
+  fefound:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
+  feform:
+    levels:
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: false
+  ccc:
+    levels:
+      - 'level1'
+      - 'level2'
+    complete: false
+  jim:
+    levels:
+    complete: false
+  fod:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
+  jsrt1:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
+  tjq:
+    levels:
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
+projects:
+  semantic:
+    check:
+      alert: 'success'
+  selectors:
+    demo:
+      alert: 'success'
+    content:
+  logic:
+    cake:
+      alert: 'success'
+    loop:
+      alert: 'success'
+    kk:
+      alert: 'danger'
+    xor:
+      alert: 'danger'
+  scrum:
+    check:
+      alert: 'info'
+  tcs:
+    check:
+      alert: 'success'
+    article:
+  interview:
+    one:
+      alert: 'success'
+    two:
+      alert: 'success'
+    panel:
+      alert: 'success'
+  job:
+    check:
+      alert: 'info'
+  group:
+    demo:
+      alert: 'info'
+    check:
+    effect:
+    team:
+    lead:
+eloquent:
+  chap1:
+    check:
+      alert: 'success'
+  chap2:
+    due:
+      alert: 'success'
+    workbook:
+      alert: 'success'
+    extra:
+      alert: 'success'
+  chap3:
+    check:
+portfolio:
+  mood:
+    check:
+      alert: 'success'
+  skeleton:
+    check:
+      alert: 'success'
+    demo:
+      alert: 'info'
+  design:
+    demo:
+    css:
+    bonus:
+  blog:
+    check:
+  deploy:
+    github:
+    octo:
+    bonus:
+extra: false
