@@ -12,30 +12,59 @@ attendance:
 codeschool:
   fefound:
     levels:
-      - level1
-      - level2
-      - level3
-      - level4
-      - level5
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
     complete: true
   feform:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
   ccc:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+      - 'level6'
+      - 'level7'
+      - 'level8'
+    complete: true
   jim:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
   fod:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
   jsrt1:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+    complete: true
   tjq:
     levels:
-    complete: false
+      - 'level1'
+      - 'level2'
+      - 'level3'
+      - 'level4'
+      - 'level5'
+    complete: true
 projects:
   semantic:
     check:
@@ -86,6 +115,22 @@ projects:
     check:
       alert: 'success'
       value: 'Enthousiastic participation'
+  group:
+    demo:
+      alert: 'success'
+      value:
+    check:
+      alert: 'success'
+      value:
+    effect:
+      alert: 'success'
+      value:
+    team:
+      alert: 'success'
+      value:
+    lead:
+      alert: 'success'
+      value:
 eloquent:
   chap1:
     check:
@@ -141,3 +186,4 @@ portfolio:
     bonus:
       alert: 'info'
       value: 'lorem'
+extra: false

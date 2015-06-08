@@ -1,0 +1,33 @@
+<% stats = data.students[locals[:name]] %>
+<% scores = { 'danger' => "Missed/Not Submitted", 'warning' => "Incomplete/Late", 'success' => "Satisfactory", 'info' => "Excellent" } %>
+
+<section class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offet-2">
+      <h2>Section 6: Extra Curricular Projects</h2>
+      <p>Lorem ipsum.</p>
+      <hr />
+      <% if stats && stats.extra == false %>
+      <div class="well">No extra curricular projects submitted.</div>
+      <% elsif stats && stats.extra %>
+      <% stats.extra.each do |project, details| %>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= details.name %></h3>
+        </div>
+        <div class="panel-body">
+          <% if details.info %>
+          <!-- Expect this description to be enclosed in the necessary elements -->
+          <%= details.info %>
+          <% else %>
+          <div class="well">No information at this time.</div>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+      <% else %>
+      <div class="well">No information at this time.</div>
+      <% end %>
+    </div>
+  </div>
+</section>

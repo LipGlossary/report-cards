@@ -31,6 +31,7 @@ jim:
   level2: 'img/cs/journey-into-mobile/level-2-on-journey-into-mobile-520441dac8d2b9fe4deae674e7f1ecb7.png'
   level3: 'img/cs/journey-into-mobile/level-3-on-journey-into-mobile-d179708d37f471ca87f3e3db0a8f1fe8.png'
   level4: 'img/cs/journey-into-mobile/level-4-on-journey-into-mobile-b1604a6c2640a14ecef6d93885c57fbc.png'
+  level5: 'img/cs/journey-into-mobile/level-5-on-journey-into-mobile-0534b5640af3447293cfbda0e911f835.png'
   complete: 'img/cs/journey-into-mobile/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png'
 fod:
   name: 'Fundamentals of Design'

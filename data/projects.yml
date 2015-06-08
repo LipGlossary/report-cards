@@ -47,3 +47,12 @@ job:
   info: '<p>Lorem ipsum.</p>'
   grades:
     check: 'Participation'
+group:
+  name: 'Group Web App'
+  info: '<p>Lorem ipsum.</p>'
+  grades:
+    demo: 'Demo day'
+    check: 'Participation'
+    effect: 'Effectiveness'
+    team: 'Teamwork'
+    lead: 'Leadership'
