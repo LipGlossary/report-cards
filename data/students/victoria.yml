@@ -3,12 +3,12 @@ github: 'vickyLu'
 csUserName: 'Quadpod'
 attendance:
   percentage:
-    alert: 'danger'
-    sub: 'Noncompliant'
-    value: '85%, including extra curricular hours'
+    alert: 'success'
+    sub: 'Compliant'
+    value: '92%, including extra curricular hours'
   extra:
     alert: 'info'
-    value: '59'
+    value: '85'
 codeschool:
   fefound:
     levels:
@@ -98,7 +98,8 @@ eloquent:
 portfolio:
   mood:
     check:
-      alert: 'warning'
+      alert: 'success'
+      value: 'On time, resubmitted'
   skeleton:
     check:
       alert: 'warning'
