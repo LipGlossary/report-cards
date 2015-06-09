@@ -13,8 +13,10 @@
         <% else %>
         The student's
         <% end %>
-      porfolio can be viewed on 
-        <% if stats.github %>
+        porfolio can be viewed
+        <% if stats.domain %>
+        at <a href="<%= stats.domain %>"><%= stats.domain %></a>.
+        <% elsif stats.github %>
         <a href="http://<%= stats.github %>.github.io">GitHub Pages</a>.
         <% else %>
         GitHub Pages, but no GitHub user name was given.
@@ -26,11 +28,11 @@
         <% else %>
         The student's
         <% end %>
-      career blog can be viewed on 
+        career blog can be viewed
         <% if stats.github %>
-        <a href="http://<%= stats.github %>.github.io/blog">GitHub Pages</a>.
+        on <a href="http://<%= stats.github %>.github.io/blog">GitHub Pages</a>.
         <% else %>
-        GitHub Pages, but no GitHub user name was given.
+        on GitHub Pages, but no GitHub user name was given.
         <% end %>
       </div>
       <% else %>

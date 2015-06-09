@@ -1,6 +1,7 @@
 fullName: 'Yeng Lee'
 github: 'yengfinity'
 csUserName: 'leeyeng2005'
+domain: 'http://yengfinity.com'
 attendance:
   percentage:
     alert: 'info'
@@ -137,4 +138,8 @@ portfolio:
     github:
     octo:
     bonus:
-extra: false
+extra:
+  happy:
+    name: 'Happy Website'
+  syntax:
+    name: 'Guess that Syntax'
