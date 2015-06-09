@@ -47,7 +47,7 @@ projects:
       alert: 'success'
   selectors:
     demo:
-      alert: 'danger'
+      alert: 'warning'
     content:
   logic:
     cake:
