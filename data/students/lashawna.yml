@@ -80,7 +80,7 @@ projects:
       alert: 'success'
   job:
     check:
-      alert: 'success'
+      alert: 'info'
   group:
     demo:
       alert: 'info'
